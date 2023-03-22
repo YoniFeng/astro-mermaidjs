@@ -1,0 +1,32 @@
+{
+  "name": "astro-mermaidjs",
+  "version": "0.1.0",
+  "description": "Support MermaidJS diagrams for Astro in .md/mdx files",
+  "scripts": {
+    "build": "parcel build ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "exports": {
+    "./remark-mermaid": "./dist/index.mjs"
+  },
+
+  "source": "src/index.ts",
+  "main": "dist/index.mjs",
+
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "dependencies": {
+    "mermaid": "^8.14.0",
+    "parcel": "^2.8.3",
+    "playwright": "^1.31.2",
+    "unist-util-visit": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.5"
+  }
+}
